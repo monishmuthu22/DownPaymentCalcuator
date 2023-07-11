@@ -1,0 +1,26 @@
+# Down Payment Calculator
+# This Program Takes A Users Credit Score And Calculates A Users Down Payment Based On That
+# Introductory Print Statement
+print("Hello User! Welcome To The Down Payment Calculator")
+# User Name Input
+user = input("Please Enter Your Name: ")
+# User Input For Credit Score
+credit_score = input(user + " Enter Your Credit Score: ")
+# Cost Of Home Variable
+cost_home = input(user + " Enter The Cost Of The Home You Wish To Purchase:  ")
+# Comparison Operator Within If Statement To Classify Credit Scores
+if int(credit_score) <= 570:
+    # Calculate Cost Of Home Based On A Lower Than Average Credit Score Using 30%
+    down_payment = int(cost_home) * 0.30
+    # Print Down Payment
+    print(user + f" If You Were To Purchase This Home It Would Cost You: $ {down_payment}")
+elif int(credit_score) <= 799:
+    # Calculate Cost Of Home Based On A Average Credit Score Using 20%
+    down_payment = int(cost_home) * 0.20
+    # Print Down Payment
+    print(user + f" If You Were To Purchase This Home It Would Cost You: $ {down_payment}")
+else:
+    # Calculate Cost Of Home Based On A Excellent Credit Score Using 10%
+    down_payment = int(cost_home) * 0.10
+    # Print Down Payment
+    print(user + f" If You Were To Purchase This Home It Would Cost You: $ {down_payment}")
